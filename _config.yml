@@ -14,3 +14,4 @@ defaults:
       type: posts
     values:
       layout: "default-scala-intro"
+      blog_title: "Введение в Scala."

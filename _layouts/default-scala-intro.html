@@ -31,7 +31,7 @@
 
     <div class="container">
       <div class="blog-header">
-      <h1 class="blog-title">Введение в Scala.</h1>
+      <h1 class="blog-title">{{page.blog_title}}</h1>
       <p class="lead blog-description">С нуля до распределенных приложений.</p>
       </div>
 
@@ -69,9 +69,28 @@
           </div>
         </div><!-- /.blog-sidebar -->
       </div> <!-- /row -->
+
+      <div id="disqus_thread"></div>
     </div> <!-- container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- DISQUS -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'grozgithub';
+        var disqus_identifier = '{{page.id}}';
+        var disqus_title = "{{page.blog_title}} {{page.title}}";
+        var disqus_url = "{{page.url}}";
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <!-- /DISQUS -->
   </body>
 </html>
