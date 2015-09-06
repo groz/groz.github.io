@@ -53,12 +53,12 @@
               <ul class="pager">
                 {% if page.previous %}
                 <li class="previous">
-                  <a href="{{page.previous.url}}">Назад</a>
+                  <a href="{{page.previous.url}}">Previous</a>
                 </li>
                 {% endif %}
                 {% if page.next %}
                 <li class="next">
-                  <a href="{{page.next.url}}">Далее</a>
+                  <a href="{{page.next.url}}">Next</a>
                 </li>
                 {% endif %}
               </ul>
@@ -68,12 +68,6 @@
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module">
-            <h4>Введение в Scala</h4>
-            <ol class="list-unstyled">
-              {% for post in site.categories.intro reversed %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ol>
 
             <h4>Practical Scala</h4>
             <ol class="list-unstyled">
@@ -81,6 +75,14 @@
                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ol>
+
+            <h4>Введение в Scala</h4>
+            <ol class="list-unstyled">
+              {% for post in site.categories.intro reversed %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ol>
+
           </div>
         </div><!-- /.blog-sidebar -->
       </div> <!-- /row -->
