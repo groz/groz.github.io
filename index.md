@@ -1,9 +1,14 @@
 ---
-title: Список блогов
 ---
 
-## [Введение в Scala]({% post_url scala/intro/2015-06-10-setup %})
+## Введение в Scala
 
-{% for post in site.posts reversed %}
-  * [{{post.title}}]({{post.url}})
+{% for post in site.categories.intro reversed %}
+  - [{{post.title}}]({{post.url}})
+{% endfor %}
+
+## Practical Scala
+
+{% for post in site.categories.practical reversed %}
+  - [{{post.title}}]({{post.url}})
 {% endfor %}

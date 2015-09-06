@@ -14,4 +14,17 @@ defaults:
       type: posts
     values:
       layout: "default-scala-intro"
+  -
+    scope:
+      path: "_posts/scala/intro"
+    values:
+      layout: "default"
       blog_title: "Введение в Scala."
+      blog_subtitle: "С нуля до распределенных приложений."
+  -
+    scope:
+      path: "_posts/scala/practical"
+    values:
+      layout: "default"
+      blog_title: "Practical Scala"
+      blog_subtitle: "Make it work."

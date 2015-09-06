@@ -7,7 +7,7 @@ title: REPL. Переменные и выражения. Блоки
 
 ## Консоль
 
-Много интересных вещей в Scala можно проверять быстро в REPL (read-eval-print-loop) консоли, которая может быть вызвана командой *sbt console* или *scala*:
+Много интересных вещей в Scala можно быстро проверять в REPL (read-eval-print-loop) консоли, которая может быть вызвана командой *sbt console* (в вашем проекте) или *scala*:
 
 {% highlight console %}
 $ scala
