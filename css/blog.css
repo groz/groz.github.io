@@ -3,11 +3,13 @@
  */
 
 body {
-  font-family: 'Forum', cursive;
-  color: #555;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #333;
 }
 
-.site-links { display: flex; flex-wrap: wrap; gap: 24px; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #ddd; font: 14px/1.5 system-ui, sans-serif; }
+.site-links { display: flex; flex-wrap: wrap; gap: 24px; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #ddd; font: 16px/1.5 system-ui, sans-serif; }
 .site-links a { display: inline-block; padding: 10px 0; color: #203d3b; }
 .site-links a:focus-visible { outline: 3px solid #b34b2f; outline-offset: 4px; }
 
@@ -88,12 +90,12 @@ h6, .h6 {
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: clamp(32px, 5vw, 52px);
   font-weight: normal;
 }
 .blog-description {
   font-size: 20px;
-  color: #999;
+  color: #666;
 }
 
 
@@ -102,8 +104,8 @@ h6, .h6 {
  */
 
 .blog-main {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 /* Sidebar modules for boxing content */
@@ -145,11 +147,11 @@ h6, .h6 {
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: clamp(28px, 4vw, 40px);
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
+  color: #666;
 }
 
 
@@ -159,7 +161,7 @@ h6, .h6 {
 
 .blog-footer {
   padding: 40px 0;
-  color: #999;
+  color: #666;
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
@@ -167,3 +169,13 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/* Keep article details and code readable alongside the larger body text. */
+.blog-post-meta { font: 16px/1.6 system-ui, sans-serif; }
+.blog-sidebar { font: 16px/1.6 system-ui, sans-serif; }
+.sidebar-module li { margin-bottom: 8px; }
+.blog-post pre { font-size: 16px; line-height: 1.6; overflow-x: auto; }
+.blog-post code { font-size: .9em; }
+.blog-post pre code { font-size: inherit; }
+.blog-post { overflow-wrap: break-word; }
+.blog-post img { max-width: 100%; height: auto; }
