@@ -4,7 +4,7 @@ Personal site with two sections: Judo and Programming.
 
 - `index.html`: homepage and interest links.
 - `judo/index.html`: Judo section index.
-- `judo/levels/index.html`: competition infographic at `/judo/levels/`, including sources and expandable parent/coach notes.
+- `judo/levels/index.html`: competition infographic at `/judo/levels/`.
 - `judo/dutch-judo-pathway.pdf`: original archived PDF; not linked from the live guide.
 - `programming/index.html`: index of the existing Scala articles. Add a link here when adding a new article.
 - `_posts/scala/`: original articles, published at their existing `/scala/...` URLs by Jekyll.
@@ -20,9 +20,9 @@ Run `python -m http.server 8000` in the repository and visit `http://localhost:8
 
 Push to the branch configured in this repository's GitHub **Settings → Pages**. The site lives at https://groz.github.io/. The existing repository branch is `master`; verify the Pages source before changing deployment settings.
 
-The Judo HTML and PDF were imported from the final competition-pathway artifacts created in September 2026. The chart retains its original sources, age-group notes, and approximate-level qualifications.
+The Judo HTML and PDF were imported from the final competition-pathway artifacts created in September 2026. The live chart is a compact guide with an abbreviation key; the original PDF remains archived.
 
 
 ## Content format
 
-Use semantic HTML and CSS for visual guides such as the Judo levels, and Markdown with Jekyll for prose articles. Keep the website as the current edition. The Judo guide has no print button or PDF-download control: use the browser Print command (Ctrl+P / Cmd+P), then a printer or Save as PDF. Its print stylesheet hides navigation and reference notes and formats the chart for A4.
+Use semantic HTML and CSS for visual guides such as the Judo levels, and Markdown with Jekyll for prose articles. Keep the website as the current edition. The Judo guide has no print button or PDF-download control: use the browser Print command (Ctrl+P / Cmd+P), then a printer or Save as PDF. Its print stylesheet hides navigation and formats the chart for A4.

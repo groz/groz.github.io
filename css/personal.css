@@ -12,15 +12,13 @@ a:focus-visible{outline:3px solid var(--accent);outline-offset:6px;border-radius
 .page{max-width:1000px;padding:0 48px 48px;margin:auto}
 .skip-link{position:absolute;left:20px;top:-100px;background:var(--ink);color:white;padding:12px 20px;z-index:2}
 .skip-link:focus{top:12px}
-.site-header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px 0;border-bottom:1px solid var(--line)}
-.wordmark{font-size:18px;font-weight:500;text-decoration:none}
+.site-header{padding:18px 0;border-bottom:1px solid var(--line)}
 .site-header nav{display:flex;gap:28px;flex-wrap:wrap;font-size:13px}
 .site-header nav a{text-decoration:none;padding:9px 0}
 .site-header nav a[aria-current=page]{text-decoration:underline;color:var(--accent)}
-.intro{padding:75px 0 62px}
-.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:600;color:var(--muted);margin:0 0 20px}
-h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(42px,6vw,64px);letter-spacing:-.045em;line-height:1.1;margin:0 0 22px}
-.lede{font-size:18px;color:var(--muted);max-width:600px;margin:0;line-height:1.7}
+.intro{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;padding:24px 0}
+.intro h1{font:750 12px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.09em;margin:0}
+.updated{font-size:11px;color:var(--muted);margin:0}
 .collection{margin-bottom:45px}
 .collection h2{font:27px/1.3 Georgia,serif;font-weight:400;margin:0 0 6px}
 .collection>p{font-size:14px;color:var(--muted);margin:0 0 20px}
@@ -28,5 +26,5 @@ h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(4
 .article-list li{border-bottom:1px solid var(--line)}
 .article-list a{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0;text-decoration:none;font-size:15px}
 .article-list a::after{content:"↗";color:var(--accent)}
-@media(max-width:620px){.page{padding:0 24px 32px}.site-header{padding:20px 0;gap:12px;align-items:flex-start;flex-direction:column}.site-header nav{gap:17px;font-size:12px}.intro{padding:52px 0 44px}.lede{font-size:16px}.eyebrow{font-size:10px}}
+@media(max-width:620px){.page{padding:0 24px 32px}.site-header{padding:18px 0}.site-header nav{gap:17px;font-size:12px}.intro{padding:20px 0}.intro h1{font-size:10px}}
 @media(max-width:360px){.page{padding:0 18px 28px}.site-header nav{gap:12px;font-size:11px}}
