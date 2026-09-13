@@ -7,6 +7,10 @@ body {
   color: #555;
 }
 
+.site-links { display: flex; flex-wrap: wrap; gap: 24px; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #ddd; font: 14px/1.5 system-ui, sans-serif; }
+.site-links a { display: inline-block; padding: 10px 0; color: #203d3b; }
+.site-links a:focus-visible { outline: 3px solid #b34b2f; outline-offset: 4px; }
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
